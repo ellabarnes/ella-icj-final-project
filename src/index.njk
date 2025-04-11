@@ -18,7 +18,7 @@
         <h3 class="card-title"> {{ album.album_name }} </h3>
         <h6 class="card-text"> {{ album.rank }}</h6>
         <p> {{ album.blurb}} </p>
-        <a href="{{album.spotify_link}}" class="card-link">Listen here!</a>
+        <a href="albums/{{album.slug}}.html" class="card-link"> {{album.album_name}} tracklist </a>
       </div>
     </div>
   </div>

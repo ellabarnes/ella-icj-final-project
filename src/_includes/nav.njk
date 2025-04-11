@@ -11,8 +11,8 @@
             Albums
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for album in Sheet1.albums %}
-            <li><a class="dropdown-item" href="{{ relative_path }}Sheet1/{{ album.album_name}}.html">{{ abum.album_name }}</a></li>
+            {% for album in albums.Sheet1 %}
+            <li><a class="dropdown-item" href="{{ relative_path }}albums/{{ album.slug }}.html">{{ album.album_name }}</a></li>
             {% endfor %}
           </ul>
         </li>

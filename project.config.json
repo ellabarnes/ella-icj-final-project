@@ -23,6 +23,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-album",
+      "data": "albums",
+      "array": "Sheet1",
+      "slug": "slug",
+      "path": "albums"
     }
   ]
 }
