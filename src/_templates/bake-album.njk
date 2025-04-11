@@ -9,11 +9,12 @@
 {% block content %}
   <article class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-5">
           <img src="../img/jumbo.jpg" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
           <h1>{{ album_name }}</h1>
+          <h3> {{rank}} / 10</h3>
           <p>{{ blurb | safe }}</p>
       </div>
     </div>
