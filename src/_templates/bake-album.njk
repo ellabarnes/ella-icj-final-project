@@ -8,15 +8,16 @@
 
 {% block content %}
   <article class="container">
-    <div class="row">
-      <div class="col-sm-5">
-          <img src="../img/jumbo.jpg" alt="" class="img-fluid mb-4">
-      </div>
-      <div class="col-sm-8">
-          <h1>{{ album_name }}</h1>
-          <h3> {{rank}} / 10</h3>
-          <p>{{ blurb | safe }}</p>
-      </div>
+    <h1 class="text-center">{{ album_name }}</h1>
+    <div class="col-12 text-center">
+      <figure class="figure">
+        <!-- find larger img -->
+        <img src="../img/album-photos/{{slug}}.jpg" alt="{{album_name}} album cover" class="bake-img">
+      </figure>
+      <h3> {{rank}} / 10</h3>
+      <a href="albums/{{album.slug}}.html" class="card-link"> {{album_name}} on Spotify. </a>
+      <p>{{ blurb | safe }}</p>
     </div>
+    <p class="text-center">additional content here</p>
   </article>
 {% endblock %}
