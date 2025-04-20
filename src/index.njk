@@ -7,17 +7,17 @@
 {% block content %}
 <div class="container text-center">
   <h1>Taylor Swift's Discogrpahy</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
+  <p>For the Spring 2025 Intro to Coding for Journalists course offerend at the University of Texas at Austin, I have rated Taylor Swift's albums. Each album includes the deluxe or special variation tracklist. </p>
 </div>
 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-5">
   {% for album in albums.Sheet1 %}
   <div class="col">
-    <div class="card" id="index-cards">
+    <div class="card bg-primary" id="index-cards">
       <div class="card-body text-center">
         <img src="img/album-photos/{{album.slug}}.jpg" class="card-img-top" alt="Image of {{ album.album_name }} album cover.">
-        <h3 class="card-title"> {{ album.album_name }} </h3>
-        <h6 class="card-text"> {{ album.rank }} / 10</h6>
-        <a href="albums/{{album.slug}}.html" class="card-link"> {{album.album_name}} tracklist </a>
+        <h3 class="card-title text-secondary"> {{ album.album_name }} </h3>
+        <h6 class="card-text text-secondary"> {{ album.rank }} / 10</h6>
+        <a href="albums/{{album.slug}}.html" class="card-link text-link-color"> {{album.album_name}}'s tracklist </a>
       </div>
     </div>
   </div>

@@ -1,10 +1,21 @@
 #jumbo {
-    background: url(../img/jumbo.jpg) no-repeat center;
-    background-size: cover;
-    color: white;
-    padding-top: 12rem
+  background: url(../img/jumbo.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  padding-top: 12rem
   }
   
-  #jumbo {
-    margin-bottom: 30px;
-  }
+#jumbo {
+  margin-bottom: 30px;
+}
+
+#jumbo-box {
+  background-color: $link-color;
+  opacity: 0.6;
+}
+
+#jumbo-head, #jumbo-sub {
+  text-align: center;
+  color: black;
+  outline-color: white;
+}

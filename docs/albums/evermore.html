@@ -10,49 +10,49 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">Ella's Ratings</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand text-secondary" href="../index.html">Ella's Ratings</a>
+    <button class="navbar-toggler color-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon color-secondary"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Albums
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
             
-            <li><a class="dropdown-item" href="../albums/debut.html">Taylor Swift</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/debut.html">Taylor Swift</a></li>
             
-            <li><a class="dropdown-item" href="../albums/fearless.html">Fearless</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless.html">Fearless</a></li>
             
-            <li><a class="dropdown-item" href="../albums/speak-now.html">Speak Now</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now.html">Speak Now</a></li>
             
-            <li><a class="dropdown-item" href="../albums/red.html">Red</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red.html">Red</a></li>
             
-            <li><a class="dropdown-item" href="../albums/1989.html">1989</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989.html">1989</a></li>
             
-            <li><a class="dropdown-item" href="../albums/reputation.html">reputation</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/reputation.html">reputation</a></li>
             
-            <li><a class="dropdown-item" href="../albums/lover.html">Lover</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/lover.html">Lover</a></li>
             
-            <li><a class="dropdown-item" href="../albums/folklore.html">folklore</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/folklore.html">folklore</a></li>
             
-            <li><a class="dropdown-item" href="../albums/evermore.html">evermore</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/evermore.html">evermore</a></li>
             
-            <li><a class="dropdown-item" href="../albums/fearless-tv.html">Fearless (Taylor&#39;s Version)</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless-tv.html">Fearless (Taylor&#39;s Version)</a></li>
             
-            <li><a class="dropdown-item" href="../albums/red-tv.html">Red (Taylor&#39;s Version)</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red-tv.html">Red (Taylor&#39;s Version)</a></li>
             
-            <li><a class="dropdown-item" href="../albums/midnights.html">Midnights</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/midnights.html">Midnights</a></li>
             
-            <li><a class="dropdown-item" href="../albums/speak-now-tv.html">Speak Now (Taylor&#39;s Version)</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now-tv.html">Speak Now (Taylor&#39;s Version)</a></li>
             
-            <li><a class="dropdown-item" href="../albums/1989-tv.html">1989 (Taylor&#39;s Version)</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989-tv.html">1989 (Taylor&#39;s Version)</a></li>
             
-            <li><a class="dropdown-item" href="../albums/ttpd.html">The Tortured Poets Department (The Anthology)</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/ttpd.html">The Tortured Poets Department (The Anthology)</a></li>
             
           </ul>
         </li>
@@ -62,9 +62,9 @@
 </nav>
 
     <div id="jumbo" class="p-5 mb-4 bg-light">
-    <div class="container-fluid py-5 text-center">
-        <h1 class="display-5 fw-bold">Ella's Rankings</h1>
-        <p>My rankings of all of Taylor Swift's discography</p>
+    <div id="jumbo-box" class="container-fluid py-5 text-center">
+        <h1 id="jumbo-head" class="display-5 fw-bold">Ella's Ratings</h1>
+        <p id="jumbo-sub">My ratings of all of Taylor Swift's discography</p>
     </div>
 </div>
 
@@ -85,8 +85,8 @@
         </div>
       </div>
     </section> 
-    <section class="container bg-dark">
-    <h2 class="text-center text-white"> Ella's rating of evermore's songs</h2>
+    <section class="container" id="tracklist">
+    <h2 class="text-center" id="track-head"> Ella's rating of evermore's songs</h2>
     <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
     
       
@@ -812,8 +812,8 @@
 
 
     <footer>
-  <p id="legal" class="center-block text-center">
-  <small>&copy;</small> <span class="copyright-year"></span>
+  <p id="legal" class="center-block text-center text-secondary">
+  <small>&copy;</small> <span class="copyright-year text-secondary"></span>
   A class project by Ella Barnes.
   </p>
 </footer>

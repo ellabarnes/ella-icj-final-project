@@ -1,18 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ relative_path }}index.html">Ella's Ratings</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand text-secondary" href="{{ relative_path }}index.html">Ella's Ratings</a>
+    <button class="navbar-toggler color-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon color-secondary"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Albums
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
             {% for album in albums.Sheet1 %}
-            <li><a class="dropdown-item" href="{{ relative_path }}albums/{{ album.slug }}.html">{{ album.album_name }}</a></li>
+            <li><a class="dropdown-item bg-primary text-secondary" href="{{ relative_path }}albums/{{ album.slug }}.html">{{ album.album_name }}</a></li>
             {% endfor %}
           </ul>
         </li>

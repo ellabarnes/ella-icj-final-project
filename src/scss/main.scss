@@ -5,8 +5,10 @@
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
-$primary-color: #823549;
-$secondary-color: #ffffff;
+$primary: #d1b2d2;
+$secondary: #823549;
+$link-color: #b5e9f6;
+$lime: #b9d2b5;
 
 /* bootstrap */
 // Option A: Include all of Bootstrap
@@ -24,6 +26,10 @@ $secondary-color: #ffffff;
 @import 'nav';
 @import 'jumbotron';
 
+h1 {
+  color: $secondary;
+}
+
 h3 {
   font-size: 1.5rem;
 }
@@ -31,4 +37,13 @@ h3 {
 #index-cards {
   margin: auto;
   width: 20rem;
+}
+
+#tracklist {
+  border-radius: 25px;
+  background-color: $primary;
+}
+
+#track-head {
+  color: white;
 }
