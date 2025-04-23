@@ -10,9 +10,13 @@ $secondary: #823549;
 $link-color: #b5e9f6;
 $lime: #b9d2b5;
 
+
 /* bootstrap */
 // Option A: Include all of Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 // Option B: Include parts of Bootstrap
 // See https://getbootstrap.com/docs/4.1/getting-started/theming/#importing
@@ -28,6 +32,7 @@ $lime: #b9d2b5;
 
 h1 {
   color: $secondary;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 h3 {
@@ -40,5 +45,6 @@ h3 {
 }
 
 #track-head {
-  color: white;
+  color: $secondary;
+  font-family: 'Bebas Neue', sans-serif;
 }

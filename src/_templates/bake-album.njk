@@ -29,10 +29,10 @@
     {%  for song in songs.Sheet1 %}
       {% if song.album_name == album_name %}
         <div class="col">
-          <p class=" text-center text-white">{{song.song_title}}</p>
+          <p class="text-center text-white" id="song-title">{{song.song_title}}</p>
         </div>
         <div class="col">
-          <p class="text-center text-right text-white">{{song.rank}} / 10</p>
+          <p class="text-center text-right text-white ">{{song.rank}} / 10</p>
         </div>
       {% endif%}
     {% endfor %}
