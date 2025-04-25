@@ -1,809 +1,356 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
   <head>
     <title>Ella's ratings | reputation</title>
-    <meta name="description" content="reputation released in 2017 ">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="reputation released in 2017 " />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-secondary" href="../index.html">Ella's Ratings</a>
-    <button class="navbar-toggler color-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon color-secondary"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Albums
-          </a>
-          <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/debut.html">Taylor Swift</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless.html">Fearless</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now.html">Speak Now</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red.html">Red</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989.html">1989</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/reputation.html">reputation</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/lover.html">Lover</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/folklore.html">folklore</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/evermore.html">evermore</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless-tv.html">Fearless (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red-tv.html">Red (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/midnights.html">Midnights</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now-tv.html">Speak Now (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989-tv.html">1989 (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/ttpd.html">The Tortured Poets Department (The Anthology)</a></li>
-            
+      <div class="container-fluid">
+        <a class="navbar-brand text-secondary" href="../index.html"
+          >Ella's Ratings</a
+        >
+        <button
+          class="navbar-toggler color-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon color-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-secondary dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Albums
+              </a>
+              <ul
+                class="dropdown-menu bg-primary"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/debut.html"
+                    >Taylor Swift</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/fearless.html"
+                    >Fearless</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/speak-now.html"
+                    >Speak Now</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/red.html"
+                    >Red</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/1989.html"
+                    >1989</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/reputation.html"
+                    >reputation</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/lover.html"
+                    >Lover</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/folklore.html"
+                    >folklore</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/evermore.html"
+                    >evermore</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/fearless-tv.html"
+                    >Fearless (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/red-tv.html"
+                    >Red (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/midnights.html"
+                    >Midnights</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/speak-now-tv.html"
+                    >Speak Now (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/1989-tv.html"
+                    >1989 (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/ttpd.html"
+                    >The Tortured Poets Department</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div id="jumbo" class="p-5 mb-4 bg-light">
-    <div id="jumbo-box" class="container-fluid py-5 text-center">
-        <h1 id="jumbo-head" class="display-5 fw-bold">Ella's Ratings</h1>
-        <p id="jumbo-sub">My ratings of Taylor Swift's discography</p>
-    </div>
-</div>
-
-    
-  <article class="container">
-    <section class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <figure class="figure">
-            <img src="../img/album-photos/reputation.jpg" alt="reputation album cover">
-          </figure>
-        </div>
-        <div class="col-md-6 col-lg-8">
-          <h1>reputation</h1>
-          <h4> 9.78 / 10</h4>
-          <a href="albums/.html" class="card-link"> Listen to reputation on Spotify. </a>
-          <p>fans Fearless you need to calm down vocalist Aaron Dressner Anti-Hero private jet reputation queue folklore All Too Well indie Willow single Eras Tour reputation was released in 2017.</p>
         </div>
       </div>
-    </section> 
-    <section class="container" id="tracklist">
-    <h2 class="text-center" id="track-head"> Ella's rating of reputation's songs</h2>
-    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">...Ready For It?</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">End Game (feat. Ed Sheeran and Future)</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">I Did Something Bad</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Don&#39;t Blame Me</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Delicate</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9.5 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Look What You Made Me Do</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">So It Goes...</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Gorgeous</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Getaway Car</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">King Of My Heart</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Dancing With Our Hands Tied</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9.5 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Dress</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">This Is Why We Can&#39;t Have Nice Things</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">Call It What You Want</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">`10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">New Year&#39;s Day</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    </div>
-  </section>
-  </article>
+    </nav>
 
+    <div id="jumbo" class="p-5 mb-4 bg-light">
+      <div id="jumbo-box" class="container-fluid py-5 text-center">
+        <h1 id="jumbo-head" class="display-5 fw-bold">Ella's Ratings</h1>
+        <p id="jumbo-sub">My ratings of Taylor Swift's discography</p>
+      </div>
+    </div>
+
+    <article class="container">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <figure class="figure" id="album-cover">
+              <img
+                src="../img/album-photos/reputation.jpg"
+                alt="reputation album cover"
+              />
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <h1 id="album-name">reputation</h1>
+            <h4 id="rating">9.78 / 10</h4>
+            <h4 id="spotify-link">
+              <a
+                href="https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv?si=xkroFX-pSFavIWsIaMSSTA"
+                id="spotify-text"
+              >
+                Listen to reputation on Spotify.</a
+              >
+            </h4>
+            <p id="blurb">
+              reputation was released November 10, 2017 under Big Machine
+              Records, and produced by Taylor Swift, Max Martin, Shellback, Jack
+              Antonoff, Ali Payami, Oscor Gorres, and Oscar Holter. This was her
+              final album under Big Machine. reputation is my favorite Taylor
+              Swift album, and my favorite song off of it is "So it goes...."
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="tracklist">
+        <h2 class="text-center" id="track-head">
+          Ella's rating of reputation's songs
+        </h2>
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              ...Ready For It?
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              End Game (feat. Ed Sheeran and Future)
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              I Did Something Bad
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              Don&#39;t Blame Me
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">Delicate</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9.5 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              Look What You Made Me Do
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">So It Goes...</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">Gorgeous</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">Getaway Car</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              King Of My Heart
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              Dancing With Our Hands Tied
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9.5 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">Dress</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              This Is Why We Can&#39;t Have Nice Things
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              Call It What You Want
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">`10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              New Year&#39;s Day
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+        </div>
+      </section>
+    </article>
 
     <footer>
-  <p id="legal" class="center-block text-center text-secondary">
-  <small>&copy;</small> <span class="copyright-year text-secondary"></span>
-  A class project by Ella Barnes.
-  </p>
-</footer>
-
+      <p id="legal" class="center-block text-center text-secondary">
+        <small>&copy;</small>
+        <span class="copyright-year text-secondary"></span>
+        A class project by Ella Barnes.
+      </p>
+    </footer>
 
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>

@@ -1,823 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
   <head>
     <title>Ella's ratings | evermore</title>
-    <meta name="description" content="evermore released in 2020 ">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="evermore released in 2020 " />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-secondary" href="../index.html">Ella's Ratings</a>
-    <button class="navbar-toggler color-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon color-secondary"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Albums
-          </a>
-          <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/debut.html">Taylor Swift</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless.html">Fearless</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now.html">Speak Now</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red.html">Red</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989.html">1989</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/reputation.html">reputation</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/lover.html">Lover</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/folklore.html">folklore</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/evermore.html">evermore</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/fearless-tv.html">Fearless (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/red-tv.html">Red (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/midnights.html">Midnights</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/speak-now-tv.html">Speak Now (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/1989-tv.html">1989 (Taylor&#39;s Version)</a></li>
-            
-            <li><a class="dropdown-item bg-primary text-secondary" href="../albums/ttpd.html">The Tortured Poets Department (The Anthology)</a></li>
-            
+      <div class="container-fluid">
+        <a class="navbar-brand text-secondary" href="../index.html"
+          >Ella's Ratings</a
+        >
+        <button
+          class="navbar-toggler color-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon color-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-secondary dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Albums
+              </a>
+              <ul
+                class="dropdown-menu bg-primary"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/debut.html"
+                    >Taylor Swift</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/fearless.html"
+                    >Fearless</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/speak-now.html"
+                    >Speak Now</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/red.html"
+                    >Red</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/1989.html"
+                    >1989</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/reputation.html"
+                    >reputation</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/lover.html"
+                    >Lover</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/folklore.html"
+                    >folklore</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/evermore.html"
+                    >evermore</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/fearless-tv.html"
+                    >Fearless (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/red-tv.html"
+                    >Red (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/midnights.html"
+                    >Midnights</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/speak-now-tv.html"
+                    >Speak Now (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/1989-tv.html"
+                    >1989 (Taylor&#39;s Version)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item bg-primary text-secondary"
+                    href="../albums/ttpd.html"
+                    >The Tortured Poets Department</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div id="jumbo" class="p-5 mb-4 bg-light">
-    <div id="jumbo-box" class="container-fluid py-5 text-center">
-        <h1 id="jumbo-head" class="display-5 fw-bold">Ella's Ratings</h1>
-        <p id="jumbo-sub">My ratings of Taylor Swift's discography</p>
-    </div>
-</div>
-
-    
-  <article class="container">
-    <section class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <figure class="figure">
-            <img src="../img/album-photos/evermore.jpg" alt="evermore album cover">
-          </figure>
-        </div>
-        <div class="col-md-6 col-lg-8">
-          <h1>evermore</h1>
-          <h4> 8.7 / 10</h4>
-          <a href="albums/.html" class="card-link"> Listen to evermore on Spotify. </a>
-          <p>fans Fearless you need to calm down vocalist Aaron Dressner Anti-Hero private jet reputation queue folklore All Too Well indie Willow single Eras Tour evermore was released in 2020.</p>
         </div>
       </div>
-    </section> 
-    <section class="container" id="tracklist">
-    <h2 class="text-center" id="track-head"> Ella's rating of evermore's songs</h2>
-    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">willow</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">7 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">champagen problems</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">gold rush</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">tis the damn season</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">tolerate it</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">no body, no crime (feat. HAIM)</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">7 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">happiness</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">7 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">dorothea</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">8 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">coney islad (feat. The National)</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">ivy</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9.5 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">cowboy like me</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">9.5 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">long story short</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">7 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">marjorie</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">closure</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">8 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">evermore (feat. Bon Iver)</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">10 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">right where you left me</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">8 / 10</p>
-        </div>
-      
-    
-      
-        <div class="col">
-          <p class="text-center text-white" id="song-title">it&#39;s time ti go</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">7 / 10</p>
-        </div>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    </div>
-  </section>
-  </article>
+    </nav>
 
+    <div id="jumbo" class="p-5 mb-4 bg-light">
+      <div id="jumbo-box" class="container-fluid py-5 text-center">
+        <h1 id="jumbo-head" class="display-5 fw-bold">Ella's Ratings</h1>
+        <p id="jumbo-sub">My ratings of Taylor Swift's discography</p>
+      </div>
+    </div>
+
+    <article class="container">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <figure class="figure" id="album-cover">
+              <img
+                src="../img/album-photos/evermore.jpg"
+                alt="evermore album cover"
+              />
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <h1 id="album-name">evermore</h1>
+            <h4 id="rating">8.7 / 10</h4>
+            <h4 id="spotify-link">
+              <a
+                href="https://open.spotify.com/album/2Xoteh7uEpea4TohMxjtaq?si=l1--Cib7QYCbA-_RvOjFrQ"
+                id="spotify-text"
+              >
+                Listen to evermore on Spotify.</a
+              >
+            </h4>
+            <p id="blurb">
+              evermore was released December 11, 2020 under Republic Records,
+              and produced by Aaron Dessner, Taylor Swift, Jack Antonoff, and
+              Bryce Dessner. The deluxe album was released on January 7, 2021
+              with two additional songs. Swift suprise dropped this album
+              without any promotion. My favorite song off evermore is "tolerate
+              it."
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="tracklist">
+        <h2 class="text-center" id="track-head">
+          Ella's rating of evermore's songs
+        </h2>
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
+          <div class="col">
+            <p class="text-center text-white" id="song-title">willow</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">7 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              champagen problems
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">gold rush</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              tis the damn season
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">tolerate it</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              no body, no crime (feat. HAIM)
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">7 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">happiness</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">7 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">dorothea</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">8 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              coney islad (feat. The National)
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">ivy</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9.5 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">cowboy like me</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">9.5 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              long story short
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">7 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">marjorie</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">closure</p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">8 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              evermore (feat. Bon Iver)
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">10 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              right where you left me
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">8 / 10</p>
+          </div>
+
+          <div class="col">
+            <p class="text-center text-white" id="song-title">
+              it&#39;s time ti go
+            </p>
+          </div>
+          <div class="col">
+            <p class="text-center text-right text-white">7 / 10</p>
+          </div>
+        </div>
+      </section>
+    </article>
 
     <footer>
-  <p id="legal" class="center-block text-center text-secondary">
-  <small>&copy;</small> <span class="copyright-year text-secondary"></span>
-  A class project by Ella Barnes.
-  </p>
-</footer>
-
+      <p id="legal" class="center-block text-center text-secondary">
+        <small>&copy;</small>
+        <span class="copyright-year text-secondary"></span>
+        A class project by Ella Barnes.
+      </p>
+    </footer>
 
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>

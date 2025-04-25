@@ -48,3 +48,38 @@ h3 {
   color: $secondary;
   font-family: 'Bebas Neue', sans-serif;
 }
+
+#album-name {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#rating {
+  font-family: 'Mulish', sans-serif;
+  font-style: italic;
+  background-color: $lime;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+#spotify-link {
+  font-family: 'Mulish', sans-serif;
+  background-color: $primary;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#spotify-text{
+  color: white;
+}
+
+#blurb {
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+}
+
+#album-coevr {
+  text-align: justify;
+}
