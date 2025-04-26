@@ -6,8 +6,8 @@
 
 {% block content %}
 <div class="container text-center">
-  <h1>Taylor Swift's Discogrpahy</h1>
-  <p>For the Spring 2025 Intro to Coding for Journalists course offerend at the University of Texas at Austin, I have rated Taylor Swift's albums. Each album includes the deluxe or special variation tracklist. </p>
+  <h1 id="index-head">Taylor Swift's Discogrpahy</h1>
+  <p id="index-blurb">For the Spring 2025 Intro to Coding for Journalists course offerend at the University of Texas at Austin, I have rated Taylor Swift's albums. Each album includes the deluxe or special variation tracklist. I have been a Swiftie for seventeen years. My favorite Taylor Swift album is reputation, and my favorite song is "tolerate it."</p>
 </div>
 <div class="container">
   <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
@@ -16,9 +16,11 @@
       <div class="card bg-primary">
         <div class="card-body text-center p" id="cards-index">
           <img src="img/album-photos/{{album.slug}}.jpg" class="card-img-top" alt="Image of {{ album.album_name }} album cover.">
-          <h3 class="card-title text-secondary"> {{ album.album_name }} </h3>
-          <h6 class="card-text text-secondary"> {{ album.rank }} / 10</h6>
-          <a href="albums/{{album.slug}}.html" class="card-link text-link-color"> {{album.album_name}}'s tracklist </a>
+          <div class="container" id="card-texts">
+            <h3 class="card-title"> {{ album.album_name }} </h3>
+            <h6 class="card-text"> {{ album.rank }} / 10</h6>
+            <a href="albums/{{album.slug}}.html" class="card-link"> {{album.album_name}}'s tracklist </a>
+          </div>
         </div>
       </div>
     </div>

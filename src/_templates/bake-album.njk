@@ -23,20 +23,25 @@
         </div>
       </div>
     </section> 
-    <section class="container" id="tracklist">
-    <h2 class="text-center" id="track-head"> Ella's rating of {{album_name}}'s songs</h2>
-    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 g-1">
-    {%  for song in songs.Sheet1 %}
-      {% if song.album_name == album_name %}
-        <div class="col">
-          <p class="text-center text-white" id="song-title">{{song.song_title}}</p>
-        </div>
-        <div class="col">
-          <p class="text-center text-right text-white ">{{song.rank}} / 10</p>
-        </div>
-      {% endif%}
-    {% endfor %}
-    </div>
-  </section>
+    <div class="container" id="tracklist">
+      <table class="table" id="table">
+        <thead>
+          <tr id="db-title">
+            <th class="text-center">Song title</th>
+            <th>Rating</th>
+          </tr>
+         </thead>
+        <tbody id="table">
+          {% for i in songs.Sheet1 %}
+            {% if i.album_name == album_name %}
+              <tr id="db-content">
+                <td class="text-center">{{i.song_title}}</td>
+                <td>{{i.rank}} / 10</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+  </div>
   </article>
 {% endblock %}
