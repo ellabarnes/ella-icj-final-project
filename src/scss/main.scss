@@ -39,13 +39,16 @@ h3 {
   font-size: 1.5rem;
 }
 
+#rating, #spotify-link, #blurb, .card-title, .card-text, .card-link, #index-blurb, #db-title, #db-content, #table-head {
+  font-family: 'Mulish', sans-serif;
+}
+
 #album-name {
   font-size: 4rem;
   text-align: center;
 }
 
 #rating {
-  font-family: 'Mulish', sans-serif;
   font-style: italic;
   background-color: $lime;
   border-radius: 5px;
@@ -55,7 +58,6 @@ h3 {
 }
 
 #spotify-link {
-  font-family: 'Mulish', sans-serif;
   background-color: $primary;
   text-align: center;
   border-radius: 5px;
@@ -68,11 +70,6 @@ h3 {
 
 #blurb {
   text-align: center;
-  font-family: 'Mulish', sans-serif;
-}
-
-.card-title, .card-text, .card-link{
-  font-family: 'Mulish', sans-serif;
 }
 
 .card-title {
@@ -96,15 +93,14 @@ h3 {
   font-size: 4rem;
 }
 
-#index-blurb {
-  font-family: 'Mulish', sans-serif;
-}
-
-.tracks {
-  text-align: center;
-}
-
 #db-title, #db-content {
-  font-family: 'Mulish', sans-serif;
   font-size: 1rem;
+}
+
+#table-head {
+  background-color: $secondary;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2.5px;
 }

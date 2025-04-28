@@ -11,37 +11,40 @@
     <section class="container">
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <figure class="figure" id="album-cover">
+          <figure class="figure">
             <img src="../img/album-photos/{{slug}}.jpg" alt="{{album_name}} album cover">
           </figure>
         </div>
         <div class="col-md-6 col-lg-8">
           <h1 id="album-name">{{ album_name }}</h1>
           <h4 id="rating">{{rank}} / 10</h4>
-          <h4 id="spotify-link"> <a href="{{spotify_link}}" id="spotify-text"> Listen to {{album_name}} on Spotify.</a> </h4>
+          <h4 id="spotify-link"> <a href="{{spotify_link}}" id="spotify-text"> Listen to {{album_name}}</a> </h4>
           <p id="blurb">{{ blurb | safe }}</p>
         </div>
       </div>
-    </section> 
-    <div class="container" id="tracklist">
-      <table class="table" id="table">
-        <thead>
-          <tr id="db-title">
-            <th class="text-center">Song title</th>
-            <th>Rating</th>
-          </tr>
-         </thead>
-        <tbody id="table">
-          {% for i in songs.Sheet1 %}
-            {% if i.album_name == album_name %}
-              <tr id="db-content">
-                <td class="text-center">{{i.song_title}}</td>
-                <td>{{i.rank}} / 10</td>
-              </tr>
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
-  </div>
+    </section>
+    <section class="container">
+      <h4 id="table-head">Tracklist</h4>
+      <div class="container" id="tracklist">
+        <table class="table" id="table">
+          <thead>
+            <tr id="db-title">
+              <th>Song title</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody id="table">
+            {% for i in songs.Sheet1 %}
+              {% if i.album_name == album_name %}
+                <tr id="db-content">
+                  <td>{{i.song_title}}</td>
+                  <td>{{i.rank}} / 10</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+     </div>
+  </section>
   </article>
 {% endblock %}
